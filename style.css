@@ -265,3 +265,97 @@ main .insights > div {
 main .insights > div:hover {
     box-shadow: none;
 }
+
+main .insights > div span {
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--color-white);
+    font-size: 2rem;
+    background: var(--color-dark);
+}
+
+main .insights > div.expanses span {
+    background-color: var(--color-danger);
+}
+
+main .insights > div.income span {
+    background-color: var(--color-green-2);
+}
+
+main .insights > div .middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main .insights h3 {
+    margin: 1rem 0 0.6rem;
+}
+
+main .insights .progress {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+main .insights svg {
+    width: 7rem;
+    height: 7rem;
+}
+
+main .insights svg circle {
+    fill: none;
+    stroke: var(--color-primary-variant);
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+
+main .insights .sales svg circle {
+    stroke-dashoffset: -30;
+    stroke-dasharray: 200;
+}
+
+main .insights .expanses svg circle {
+    stroke-dashoffset: 20;
+    stroke-dasharray: 80;
+}
+
+main .insights .income svg circle {
+    stroke-dashoffset: 35;
+    stroke-dasharray: 110;
+}
+
+main .insights .progress .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .insights .expanses .progress .number p {
+    color: var(--color-danger);
+}
+
+main .insights .income .progress .number p {
+    color: var(--color-green-2);
+}
+
+main .insights .sales .progress .number p {
+    color: var(--color-dark);
+}
+
+main .insights small {
+    margin-top: 1.3rem;
+    display: block;
+}
+
+main .recent-order {
+    margin-top: 2rem;
+}
